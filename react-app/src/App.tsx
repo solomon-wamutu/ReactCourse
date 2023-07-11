@@ -32,37 +32,47 @@
 // }
 //import { Fragment } from "react";
 // export default App
+
+// function App() {
+//   let items = ["New York", "Nairobi", "Mombasa", "Nyeri", "Kisumu", "Eldoret"];
+
+//   const HandleClick = (event: MouseEvent) => console.log(event.target);
+//   //  items = [];
+
+//   // if(items.length === 0){
+//   //   return <><h1>List</h1><p>No items found</p></>;
+//   // }
+//   // const getMessage = () => {
+//   //   return items.length === 0 ? <p>No items found</p> :null;
+//   // }
+
+//   return (
+//     <>
+//       <h1>List Group</h1>
+//       {items.length === 0 && <p>No items found</p>}
+//       <ul className="list-group">
+//         {items.map((item, index) => (
+//           <li
+//             className="list-group-item"
+//             onClick={(e) => console.log(e)}
+//             key={item}
+//           >
+//             {item}
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// }
 import ListGroup from "./components/ListGroup";
 import Tables from "./components/Tables";
+
 function App() {
-  let items = [
-    "New York",
-    "Nairobi",
-    "Mombasa",
-    "Nyeri",
-    "Kisumu",
-    "Eldoret",
-  ];
-  //  items = [];
-
-  // if(items.length === 0){
-  //   return <><h1>List</h1><p>No items found</p></>;
-  // }
-  // const getMessage = () => {
-  //   return items.length === 0 ? <p>No items found</p> :null;
-  // }
-
-  return (
-    <>
-      <h1>List Group</h1>
-      {items.length === 0 && <p>No items found</p>} 
-      <ul className="list-group">
-        {items.map((item) => (
-          <li className = "list-group-item" onClick = {() => console.log(item)}key={item}>{item}</li>
-        ))}
-      </ul>
-    </>
-  );
+  return <div><ListGroup></ListGroup></div>
 }
-
 export default App;
+
+// function ListGroup() {
+//   return <h1>ListGroup</h1>;
+// }
+// export default ListGroup;
